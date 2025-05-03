@@ -101,6 +101,7 @@ internal fun AddEditNoteScreen(
                 .fillMaxSize()
                 .background(noteBackgroundAnimatable.value)
                 .padding(16.dp)
+                .padding(top = 16.dp)
         ) {
             Row(
                 modifier = Modifier

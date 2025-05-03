@@ -59,6 +59,8 @@ internal fun NotesScreen(
     val scope = rememberCoroutineScope()
 
     Scaffold(
+        modifier = Modifier
+            .padding(top = 16.dp),
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
