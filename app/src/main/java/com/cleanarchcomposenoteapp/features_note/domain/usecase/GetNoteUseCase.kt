@@ -3,11 +3,11 @@ package com.cleanarchcomposenoteapp.features_note.domain.usecase
 import com.cleanarchcomposenoteapp.features_note.domain.model.Note
 import com.cleanarchcomposenoteapp.features_note.domain.repository.NoteRepository
 
-class DeleteNoteUseCase(
+class GetNoteUseCase(
     private val repository: NoteRepository
 ) {
 
-    suspend operator fun invoke(note: Note){
-        return repository.deleteNote(note)
+    suspend operator fun invoke(id: Int): Note? {
+        return repository.getNoteById(id)
     }
 }

@@ -2,7 +2,11 @@ package com.cleanarchcomposenoteapp.features_note.domain.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.cleanarchcomposenoteapp.ui.theme.BabyBlue
+import com.cleanarchcomposenoteapp.ui.theme.LightGreen
 import com.cleanarchcomposenoteapp.ui.theme.RedOrange
+import com.cleanarchcomposenoteapp.ui.theme.RedPink
+import com.cleanarchcomposenoteapp.ui.theme.Violet
 
 @Entity
 data class Note (
@@ -13,7 +17,7 @@ data class Note (
     @PrimaryKey val id: Int? = null
 ) {
     companion object {
-        val noteColors = listOf(RedOrange)
+        val noteColors = listOf(RedOrange, LightGreen, Violet, BabyBlue, RedPink)
     }
 }
 

@@ -7,7 +7,7 @@ import com.cleanarchcomposenoteapp.features_note.domain.util.OrderType
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-internal class GetNotesUseCase (
+class GetNotesUseCase (
     private val repository: NoteRepository
 ) {
 

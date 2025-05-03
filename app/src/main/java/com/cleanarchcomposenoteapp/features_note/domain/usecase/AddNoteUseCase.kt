@@ -8,7 +8,7 @@ import kotlin.jvm.Throws
 private const val INVALID_TITLE_NOTE_EXCEPTION_MESSAGE = "The title of the note can't be empty"
 private const val INVALID_CONTENT_NOTE_EXCEPTION_MESSAGE = "The content of the note can't be empty"
 
-internal class AddNoteUseCase(
+class AddNoteUseCase(
     private val repository: NoteRepository
 ) {
 

@@ -8,12 +8,15 @@ import com.cleanarchcomposenoteapp.features_note.domain.model.Note
 import com.cleanarchcomposenoteapp.features_note.domain.usecase.NoteUseCases
 import com.cleanarchcomposenoteapp.features_note.domain.util.NoteOrder
 import com.cleanarchcomposenoteapp.features_note.domain.util.OrderType
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-internal class NotesViewModel(
+@HiltViewModel
+internal class NotesViewModel @Inject constructor(
     private val noteUseCases: NoteUseCases
 ) : ViewModel() {
 
